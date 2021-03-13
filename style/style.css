@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.hero {
+  width: 50vw;
+}
+
+.hero img {
+  width: 10rem;
+  margin: 1rem 0;
+}
+
+.navigation {
+  width: 50vw;
+}
+
+.navigation a {
+  padding: 0 1vw;
+  text-decoration: none;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.opala {
+  width: 100%;
+}
+
+.opala::before {
+  content: "";
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100vw;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+  background-image: url(/img/bg.jpg);
+}
+
+.itens {
+  width: 100%;
+  height: 700px;
+  display: block;
+  text-align: right;
+  padding: 4rem 10%;
+}
+
+.itens h2 {
+  font-size: 5rem;
+  color: white;
+}
+
+.itens p {
+  margin-top: 3rem;
+  font-size: 200%;
+
+  text-align: center;
+  color: white;
+}
+
+.vitrine {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.vitrine h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.info {
+  margin: 2rem 5rem;
+  display: flex;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.info:hover {
+  background-color: rgb(238, 238, 238);
+  transform: translateY(-7px);
+}
+
+.red img {
+  width: 300px;
+  border-radius: 1rem;
+}
+
+.description {
+  width: 100vw;
+  margin-left: 2rem;
+  text-align: left;
+  display: block;
+}
+
+.description span {
+  font-size: 2vw;
+  justify-content: space-between;
+}
+
+.date {
+  text-align: end;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adreass {
+  margin-top: 5rem;
+}
+
+.adreass span {
+  font-size: 1rem;
+}
+
+.signin {
+  width: 100%;
+  height: 500px;
+  padding: 4rem;
+  background-color: red;
+  display: flex;
+  align-items: center;
+}
+
+.cadastre-se {
+  color: white;
+  width: 50vw;
+  font-size: 4vw;
+}
+
+.sign-container {
+  margin-left: 1rem;
+  padding: 2rem;
+  width: 50vw;
+  background-color: #b10009;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sign-container p {
+  text-align: center;
+  color: white;
+}
+
+.input {
+  margin-top: 1rem;
+
+  display: block;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.input label {
+  color: white;
+  font-weight: bold;
+}
+
+.input input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  outline: 0;
+}
+
+.signin button {
+  margin-top: 2rem;
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  color: white;
+  background-color: red;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.signin button:hover {
+  background-color: white;
+  color: red;
+  box-shadow: 0px 15px 20px rgba(255, 0, 0, 0.4);
+  transform: translateY(-7px);
+}
+
+footer {
+  padding: 3rem 5rem;
+  background-color: black;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p {
+  margin-top: 0.8rem;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    width: 70vw;
+    text-align: start;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+    background-color: white;
+  }
+
+  .nav-mobile button {
+    background-color: white;
+    border: none;
+    border-radius: 0.2rem;
+  }
+
+  .nav-mobile button:hover {
+    transition: 0.1s;
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+  }
+
+  .menu {
+    width: 100;
+    background-color: white;
+    position: absolute;
+    top: 99px;
+    right: 0;
+    left: 0;
+  }
+
+  .menu a {
+    display: none; /*display: none = some a barra*/
+    margin: 3rem 0;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .opala {
+    width: 100%;
+    height: 500px;
+  }
+
+  .opala::before {
+    height: 500px;
+  }
+
+  .itens {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .itens h2 {
+    font-size: 40px;
+    width: 100%;
+    color: white;
+  }
+
+  .itens p {
+    font-size: 120%;
+    color: white;
+  }
+
+  .vitrine h2 {
+    margin: 2rem 0;
+  }
+
+  .blocks {
+    display: flex;
+  }
+
+  .info {
+    margin: 2rem;
+  }
+}
