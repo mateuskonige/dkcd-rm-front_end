@@ -261,11 +261,10 @@ footer p {
     background-color: white;
     border: none;
     border-radius: 0.2rem;
+    outline: none;
   }
 
   .nav-mobile button:hover {
-    transition: 0.1s;
-    background-color: rgb(221, 221, 221);
     cursor: pointer;
   }
 
@@ -279,7 +278,7 @@ footer p {
   }
 
   .menu a {
-    display: none; /*display: none = some a barra*/
+    display: block; /*display: none = some a barra*/
     margin: 3rem 0;
     color: black;
     font-weight: bold;
